@@ -20,6 +20,7 @@ return new class extends Migration
             $table->json('images')->nullable();
             $table->decimal('price', 15, 2);
             $table->integer('stock');
+            $table->json('tags');
             $table->boolean('is_active')->default(true);
             $table->boolean('is_featured')->default(true);
             $table->timestamps();

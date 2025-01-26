@@ -70,13 +70,15 @@ class OrderResource extends Resource
                         Forms\Components\TextInput::make('unit_amount')
                             ->label('Unit Amount')
                             ->numeric()
+                            ->prefix('Rp')
                             ->required()
                             ->disabled()
                             ->dehydrated(),
 
-                        Forms\Components\TextInput::make('total_amount')
+                            Forms\Components\TextInput::make('total_amount')
                             ->label('Total Amount')
                             ->numeric()
+                            ->prefix('Rp')
                             ->required()
                             ->dehydrated(),
                     ])
