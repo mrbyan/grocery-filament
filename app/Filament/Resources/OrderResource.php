@@ -75,6 +75,10 @@ class OrderResource extends Resource
                             ->disabled()
                             ->dehydrated(),
 
+                        Forms\Components\TextInput::make('total_amount')
+                            ->label('Total Amount')
+                            ->numeric()
+
                             Forms\Components\TextInput::make('total_amount')
                             ->label('Total Amount')
                             ->numeric()
