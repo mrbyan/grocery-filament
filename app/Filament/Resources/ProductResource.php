@@ -102,6 +102,9 @@ class ProductResource extends Resource
                     ->numeric()
                     ->sortable(),
 
+                Tables\Columns\TextColumn::make('tags')
+                    ->badge(),
+
                 Tables\Columns\ToggleColumn::make('is_active'),
 
                 Tables\Columns\ToggleColumn::make('is_featured'),

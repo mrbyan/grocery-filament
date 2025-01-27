@@ -10,6 +10,7 @@ class Product extends Model
 
     protected $casts = [
         'images' => 'array',
+        'tags' => 'array',
     ];
 
     // category relationship
