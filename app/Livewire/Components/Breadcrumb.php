@@ -4,13 +4,13 @@ namespace App\Livewire\Components;
 
 use Livewire\Component;
 
-class TitleSection extends Component
+class Breadcrumb extends Component
 {
+    public $backLink;
     public $label;
-    public $route;
 
     public function render()
     {
-        return view('livewire.components.title-section');
+        return view('livewire.components.breadcrumb');
     }
 }

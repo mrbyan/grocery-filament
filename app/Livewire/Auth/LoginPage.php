@@ -8,10 +8,10 @@ use Livewire\Component;
 
 #[Layout('layouts.app')]
 #[Title('Login')]
-class Login extends Component
+class LoginPage extends Component
 {
     public function render()
     {
-        return view('livewire.auth.login');
+        return view('livewire.auth.login-page');
     }
 }

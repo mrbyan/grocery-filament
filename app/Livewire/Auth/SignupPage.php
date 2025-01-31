@@ -6,10 +6,10 @@ use Livewire\Attributes\Layout;
 use Livewire\Component;
 
 #[Layout('layouts.app')]
-class Signup extends Component
+class SignupPage extends Component
 {
     public function render()
     {
-        return view('livewire.auth.signup');
+        return view('livewire.auth.signup-page');
     }
 }

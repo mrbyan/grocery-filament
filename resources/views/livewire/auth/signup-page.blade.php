@@ -1,10 +1,11 @@
 <div>
-    <!-- banner -->
+    {{-- start banner --}}
     <div>
-        <img src="https://placehold.co/400x600" alt="" />
+        <img src="{{ asset('images/signup-banner.jpg') }}" alt="" />
     </div>
+    {{-- end banner --}}
 
-    <!-- bottom -->
+    {{-- start signup section --}}
     <div class="fixed bottom-0 w-full max-w-sm bg-white p-4 rounded-t-2xl">
         <div class="flex flex-col gap-1 mt-4">
             <h2 class="text-2xl font-semibold">Create account</h2>
@@ -13,7 +14,7 @@
             </p>
         </div>
 
-        <!-- form -->
+        {{-- start signup form --}}
         <form action="" class="mt-4">
             <div class="flex items px-6 py-4 items-center gap-5">
                 <label for="email">
@@ -48,17 +49,19 @@
                 <input type="password" name="password" id="password" placeholder="Password"
                     class="text-sm w-full p-2" />
             </div>
+
+            {{-- btn signup --}}
+            @livewire('components.button', ['label' => 'Sign Up'])
+
+            {{-- login redirect --}}
+            <div>
+                <p class="text-center text-sm font-light my-5 text-slate-400/80">
+                    Already have an account ?
+                    <a href="{{ route('login') }}" wire:navigate class="text-primary font-medium">Login</a>
+                </p>
+            </div>
         </form>
-
-        <!-- btn login -->
-        @livewire('components.button', ['label' => 'Sign Up'])
-
-        <!-- login redirect -->
-        <div>
-            <p class="text-center text-sm font-light my-5 text-slate-400/80">
-                Already have an account ?
-                <a href="{{ route('login') }}" wire:navigate class="text-primary font-medium">Login</a>
-            </p>
-        </div>
+        {{-- end signup form --}}
     </div>
+    {{-- end signup section --}}
 </div>
