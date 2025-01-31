@@ -1,4 +1,4 @@
-<div class="flex items-center justify-between px-4">
+<div class="flex items-center justify-between px-4 mt-4">
     <form action="" class="w-full flex items-center gap-4 bg-[#F4F5F9] px-4 py-3 rounded">
         <label for="search">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
